@@ -1,0 +1,49 @@
+Agregación
+
+La florería "Fragancias Naturales" requiere una aplicación para el sector de ventas que registre los ramos de flores vendidos de modo que facilite el análisis de estos datos. 
+
+Descripción 
+
+La florería presenta distintos tipos de flores.
+Cada flor tiene asociado un número que comienza en 1 y es correlativo.
+De cada flor se registra: número, nombre, color y una breve descripción.
+Los ramos se  distinguen por el tamaño.
+ Los tipos de ramos que se venden son de tamaño(chico, mediano y grande).
+De un ramo vendido se registra el tamaño del ramo y el/las flor/flores pedidas.
+Diagrama de clases
+
+Flores y ramo
+
+ La aplicación que usted debe implementar requiere: 
+
+A.    Implementar las clases del diagrama UML dado.
+
+B.    Definir una clase Manejador de Flores que permita manejar los n flores que la florería presenta a la venta, el manejador debe implementarse usando un arreglo numpy.
+
+C.    Definir una clase Manejador de Ramos que registre y gestione a través de una lista Python los ramos vendidos.
+
+D.    Implementar un programa principal, que  permita:
+
+a.   Cargar los datos de las flores en una instancia de la clase Manejador de Flores. Estos datos se encuentran en el archivo 'flores.csv'.
+
+b.     A través de un menú de opciones realice las siguientes funcionalidades:
+
+1. Registrar un ramo vendido (instancia de la clase ramo), solicitando las flores que lo que se pondrán en el ramo.
+
+2. Mostrar el nombre de las 5 flores  más pedidas en un ramo, considerando todos los ramos vendidos.
+
+4.  Ingresar por teclado un tipo de ramo y mostrar las flores vendidas en ese tamaño considerando todos los ramos vendidos.
+
+ 
+
+ 
+
+ 
+
+Observaciones:
+
+ 
+
+·         Flores disponible en colores blanco, rojo, rosa, amarillo, violeta.
+
+·         Tipo de flores azucenas, margaritas, violeta, lirio,rosas, etc.
