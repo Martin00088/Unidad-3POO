@@ -1,0 +1,24 @@
+Con su grupo de trabajo deben desarrollar una aplicación para manejar los contratos de los jugadores con los equipos de futbol que existen en la Argentina
+
+ a-    Defina las clases involucradas en el siguiente diagrama.
+
+       Jugador-Equipo
+ a-    Defina una clase Manejador de Equipos, implementada con un arreglo numpy para almacenar instancias de la clase Equipos. El archivo 'Equipos.csv' contiene en la primera línea la cantidad de equipos, y a continuación los datos de cada uno de ellos.
+
+ b-    Defina una clase colección (manejador), tipo lista de Python para almacenar las instancias de la clase Jugador.
+
+ c-     Defina una clase colección (manejador), tipo arreglo numpy para almacenar instancias de la clase contrato.
+
+ d- Implementar un programa que permita:
+
+ 1. Cargar los datos de los Equipos en la clase Manejador de Equipos, a partir de los datos registrados en el archivo.
+
+ 2. Crear un contrato para un jugador en un equipo: Se genera un contrato para un jugador en un equipo.
+
+ 3. Consultar jugadores Contratados: Ingresar el DNI de un jugador, si está contratado, mostrar el nombre del Equipo en el que fue contratado, y la fecha de finalización de contrato.
+
+ 4. Consultar Contratos: Ingresar el identificador de un Equipo y listar los datos de los Jugadores cuyo contrato vence en 6 meses.
+
+5. Obtener importe de contratos: Para un nombre de equipo leído desde teclado, determinar el importe total de los contratos que posee con los jugadores del equipo.
+
+5. Guardar Contratos: Generar un nuevo archivo que contenga los siguientes datos de los contratos: DNI del jugador, Nombre del equipo, fecha de inicio, fecha de fin, y el pago mensual.
