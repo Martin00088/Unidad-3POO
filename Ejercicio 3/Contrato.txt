@@ -1,0 +1,4 @@
+FechaInicio;FechaFin;PagoMensual;NombreEquipo;DNIjugador
+2022-06-25;2022-09-25;3000.0;Club de Gimnasia y Esgrima La Plata;11111111
+2022-06-25;2023-12-01;3000.0;Club Atletico Newell's Old Boys;22222222
+2022-05-25;2023-01-01;3000.0;Club Atletico Newell's Old Boys;33333333

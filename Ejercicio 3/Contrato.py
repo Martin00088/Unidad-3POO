@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Contrato:
     __Finicio = None
     __Ffin = None
@@ -5,9 +7,9 @@ class Contrato:
     __equipo = None
     __jugador = None
 
-    def __init__(self, ini, fin, mes, jugador=None, equipo=None):
-        self.__Finicio = ini
-        self.__Ffin = fin
+    def __init__(self, ini=None, fin=None, mes=None, jugador=None, equipo=None):
+        self.__Finicio = datetime.strptime(ini, "%d/%m/%Y").date()
+        self.__Ffin = datetime.strptime(fin, "%d/%m/%Y").date()
         self.__Pmensual = mes
         self.__equipo = equipo
         self.__jugador = jugador

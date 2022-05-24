@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 class Jugador:
     __nombre = None
     __dni = None
@@ -6,12 +9,12 @@ class Jugador:
     __Fnaci = None
     __equipo = None
 
-    def __init__(self, dni, nom , cna, pori, fnac):
+    def __init__(self, dni=None, nom=None , cna=None, pori=None, fnac=None):
         self.__nombre = nom
         self.__dni = dni
         self.__Cnatal = cna
         self.__Porigen = pori
-        self.__Fnaci = fnac
+        self.__Fnaci = datetime.strptime(fnac, "%d/%m/%Y").date()
 
     def __str__(self):
         return "Nombre:{} DNI:{} Ciudad Natal:{} Pais Origen:{} Fecha Nacimiento:{}".format(self.__nombre,self.__dni,self.__Cnatal,self.__Porigen,self.__Fnaci)

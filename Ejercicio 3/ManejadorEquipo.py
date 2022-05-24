@@ -4,24 +4,13 @@ import numpy as np
 
 
 class ManejadorEquipo:
-    __cantidad = 0
-    __dimension = 5
-    __incremento = 5
     __arrayE = None
-    __jugador = None
 
-    def __init__(self, dimension=5, incremento=5):
-        self.__arrayE = np.empty(dimension, dtype=Equipo)
-        self.__cantidad = 0
-        self.__dimension = dimension
-        self.__incremento = incremento
+    def __init__(self):
+        self.__arrayE = np.empty(0, dtype=Equipo)
 
     def agregarEquipo(self, equipo):
-        if self.__cantidad == self.__dimension:
-            self.__dimension += self.__incremento
-            self.__arrayE.resize(self.__dimension)
-        self.__arrayE[self.__cantidad] = equipo
-        self.__cantidad += 1
+        self.__arrayE = np.append(self.__arrayE, equipo)
 
     def CargaEquipo(self):
         archivo = open("Equipo.csv")
@@ -33,6 +22,7 @@ class ManejadorEquipo:
             else:
                 equipo = Equipo(str(fila[0]), str(fila[1]))
                 self.agregarEquipo(equipo)
+        print(len(self.__arrayE))
         archivo.close()
 
     def getarrayE(self):

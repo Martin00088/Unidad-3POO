@@ -12,7 +12,7 @@ class ManejadorJugador:
         archivo = open("Jugador.csv")
         reader = csv.reader(archivo, delimiter=";")
         for fila in reader:
-                jugador = Jugador(int(fila[0]), str(fila[1]), str(fila[2]), str(fila[3]), str(fila[4]))
+                jugador = Jugador(int(fila[0]), str(fila[1]), str(fila[2]), str(fila[3]), fila[4])
                 self.__listaJ.append(jugador)
 
     def getListaJ(self):
@@ -20,4 +20,5 @@ class ManejadorJugador:
 
     def getposLisJ(self, pos):
         return self.__listaJ[pos]
+
 
