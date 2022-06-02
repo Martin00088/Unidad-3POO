@@ -1,0 +1,57 @@
+[
+    {
+        "__class__": "Heladera",
+        "atributos": {
+            "marca": "Lg",
+            "modelo": "FKROA",
+            "color": "Negro",
+            "paisFabricacion": "Argentina",
+            "PrecioBase": 325000,
+            "clitros": 2300,
+            "frezzer": true,
+            "ciclica": false
+        }
+    },
+    {
+        "__class__": "Lavarropa",
+        "atributos": {
+            "marca": "Liliana",
+            "modelo": "45LDKN",
+            "color": "Blanco",
+            "paisFabricacion": "Argentina",
+            "PrecioBase": 450000,
+            "Caplavado": 4,
+            "Vcentrifuga": 2300,
+            "CantPrograma": 2,
+            "TipCarga": "superior"
+        }
+    },
+    {
+        "__class__": "Televisor",
+        "atributos": {
+            "marca": "Hitachi",
+            "modelo": "IIOER89",
+            "color": "Blanco",
+            "paisFabricacion": "USA",
+            "PrecioBase": 45400,
+            "Tpantalla": "LCD",
+            "pulgada": "55.5",
+            "Tdefinicion": "HD",
+            "Cinternet": true
+        }
+    },
+    {
+        "__class__": "Televisor",
+        "atributos": {
+            "marca": "Philips",
+            "modelo": "IIOER89",
+            "color": "Blanco",
+            "paisFabricacion": "USA",
+            "PrecioBase": 45400,
+            "Tpantalla": "LCD",
+            "pulgada": "55.5",
+            "Tdefinicion": "HD",
+            "Cinternet": true
+        }
+    }
+]
