@@ -1,0 +1,61 @@
+[
+    {
+        "__class__": "Docente",
+        "__atributos__": {
+            "cuil": "43344334",
+            "apellido": "Gonzalez",
+            "nombre": "Martin",
+            "sueldobasico": 20000,
+            "antiguedad": 10,
+            "carrera": "LCC",
+            "cargo": "Suplente",
+            "catedra": "POO"
+        }
+    },
+    {
+        "__class__": "Investigador",
+        "__atributos__": {
+            "cuil": "45343543",
+            "apellido": "Laciar",
+            "nombre": "Joaquin",
+            "sueldobasico": 30000,
+            "antiguedad": 20,
+            "areainvestigacion": "Informatica",
+            "tipinvestigacion": "Robotica"
+        }
+    },
+    {
+        "__class__": "DocenteInvestigador",
+        "__atributos__": {
+            "cuil": "4344343",
+            "apellido": "Fuentes",
+            "nombre": "Jazmin",
+            "sueldobasico": 40000,
+            "antiguedad": 4,
+            "areainvestigacion": "Informatica",
+            "tipinvestigacion": "Robotica",
+            "carrera": "LCC",
+            "cargo": "semiexclusivo",
+            "catedra": "POO",
+            "cantincentivos": "I",
+            "importextra": 5000
+        }
+    },
+    {
+        "__class__": "DocenteInvestigador",
+        "__atributos__": {
+            "cuil": "4344343",
+            "apellido": "Fuentes",
+            "nombre": "Aguero",
+            "sueldobasico": 40000,
+            "antiguedad": 4,
+            "areainvestigacion": "Informatica",
+            "tipinvestigacion": "Robotica",
+            "carrera": "LCC",
+            "cargo": "simple",
+            "catedra": "POO",
+            "cantincentivos": "I",
+            "importextra": 5000
+        }
+    }
+]
