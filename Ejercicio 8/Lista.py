@@ -174,18 +174,30 @@ class Lista:
     def modificarBasico(self,cuil,nuevob):
         aux = self.__comienzo
         while aux is not None and aux.getDato().getcuil() != cuil:
-            aux=aux.getSiguiente()
-        if aux.getDato.getcuil == cuil:
+            aux = aux.getSiguiente()
+        if aux.getDato().getcuil() == cuil:
             aux.getDato().modificarbasico(nuevob)
+            print("Modificado con exito")
         else:
             print("El cuil ingresado no existe")
 
-    def modificarPorcentajeporcargo(self,cuil,nuevopor):
+    def modificarPorcentajeporcargo(self, cuil, nuevopor):
         aux = self.__comienzo
         while aux is not None and aux.getDato().getcuil() != cuil:
             aux = aux.getSiguiente()
-        if aux.getDato.getcuil == cuil:
+        if aux.getDato().getcuil() == cuil:
             aux.getDato().modificarporcargo(nuevopor)
+            print("Modificado con exito")
+        else:
+            print("El cuil ingresado no existe")
+
+    def modificarPorcentajeporcategoria(self, cuil, nuevopor):
+        aux = self.__comienzo
+        while aux is not None and aux.getDato().getcuil() != cuil:
+            aux = aux.getSiguiente()
+        if aux.getDato().getcuil() == cuil:
+            aux.getDato().modificarporcategoria(nuevopor)
+            print("Modificado con exito")
         else:
             print("El cuil ingresado no existe")
 
@@ -193,8 +205,9 @@ class Lista:
         aux = self.__comienzo
         while aux is not None and aux.getDato().getcuil() != cuil:
             aux = aux.getSiguiente()
-        if aux.getDato.getcuil == cuil:
+        if aux.getDato().getcuil() == cuil:
             aux.getDato().modificarimporteExtra(nuevoImp)
+            print("Modificado con exito")
         else:
             print("El cuil ingresado no existe")
 

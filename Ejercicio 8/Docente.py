@@ -5,17 +5,22 @@ class Docente(Personal):
     __carrera=None
     __cargo=None
     __catedra=None
+    __porcencargo=None
 
     def __init__(self, **kwargs):
         self.__carrera = kwargs["carrera"]
         self.__cargo = kwargs["cargo"]
         self.__catedra = kwargs["catedra"]
+        self.__porcencargo = 0
         super().__init__(**kwargs)
 
     def __str__(self):
         cadena = super().__str__()
         cadena += "Carrera:{} Cargo:{} Catedra:{}".format(self.__carrera,self.__cargo,self.__catedra)
         return cadena
+
+    def getporcentajecargo(self):
+        return self.__porcencargo
 
     def getcarrera(self):
         return self.__carrera
@@ -43,19 +48,18 @@ class Docente(Personal):
         return dH
 
     def getporcentajeCargo(self):
-        porCargo = 0
         if self.__cargo == "simple":
-            porCargo = ((self.setsueldoPersonal()*10)/100)
+            self.__porcencargo = ((self.setsueldoPersonal()*10)/100)
         elif self.__cargo == "semiexclusivo":
-            porCargo = ((self.setsueldoPersonal()*20)/100)
+           self.__porcencargo = ((self.setsueldoPersonal()*20)/100)
         elif self.__cargo == "exclusivo":
-            porCargo = ((self.setsueldoPersonal()*50)/100)
-        return porCargo
+            self.__porcencargo = ((self.setsueldoPersonal()*50)/100)
 
     def setsueldoDocente(self):
-        return self.setsueldoPersonal() + self.getporcentajeCargo()
+        return self.setsueldoPersonal() + self.getporcentajecargo()
 
     def getsueldo(self):
         return self.setsueldoDocente()
 
-    def modificarporcargo(self,nuevopor):
+    def modificarporcargo(self, nuevopor):
+        self.__porcencargo = (self.setsueldoPersonal()*nuevopor)/100

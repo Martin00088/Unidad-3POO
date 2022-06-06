@@ -1,5 +1,6 @@
 from Manejador import Manejador
 
+
 class Menu:
     __instanciaManejador=None
 

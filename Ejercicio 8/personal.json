@@ -44,7 +44,7 @@
     {
         "__class__": "DocenteInvestigador",
         "__atributos__": {
-            "cuil": "4344343",
+            "cuil": "4344243",
             "apellido": "Fuentes",
             "nombre": "Aguero",
             "sueldobasico": 40000,

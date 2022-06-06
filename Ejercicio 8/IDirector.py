@@ -9,7 +9,7 @@ class IDirector(Interface):
     def modificarPorcentajeporcargo(dni, nuevoPorcentaje):
         pass
 
-    def modificarPorcentajeporcategoría(dni, nuevoPorcentaje):
+    def modificarPorcentajeporcategoria(dni, nuevoPorcentaje):
         pass
 
     def modificarImporteExtra(dni, nuevoImporteExtra):

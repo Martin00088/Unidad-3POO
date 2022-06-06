@@ -37,5 +37,5 @@ class Investigador(Personal):
         return dH
 
     def sueldoInvestigador(self):
-        return self.sueldoPersonal()
+        return self.setsueldoPersonal()
 
